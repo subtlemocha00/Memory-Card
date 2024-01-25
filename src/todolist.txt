@@ -1,0 +1,21 @@
+BACKEND
+
+DONE 1 create react vite app
+2 list overall features
+  -cards shuffled on load of page
+  -cards shuffle randomly when user clicks on one
+  --if card clicked ISN'T in list of clickedCards[], +1 to scoreboard, shuffleCards()
+  ---if score > highScore setHighScore(currentScore)
+  --if card clicked IS in list of clickedCards[], score = 0
+  
+3 list components
+4 decide app structure (who talks to whom)
+5 choose an API to use for images
+6 fetch data (useEffect)
+7 scoreboard component
+8 currentScore component
+9 bestScore component
+10 function that shuffles an array of objects
+
+FRONTEND
+11 card component
