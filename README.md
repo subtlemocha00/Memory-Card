@@ -1,8 +1,10 @@
-# React + Vite
+# Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A game where you try to click on each card just once to get the high score
+If you click on a card already clicked, it is game over.
 
-Currently, two official plugins are available:
+This is a project from The Odin Project Javascript course.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React, Vite and Node.js.
+
+Pexels.com image API for card images.
