@@ -9,7 +9,6 @@ export default function BoardLocal() {
 	useEffect(() => {
 		setData(imageData);
 		setLoading(false);
-		console.log(data);
 	}, []);
 
 	const shuffle = () => {
