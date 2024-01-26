@@ -6,7 +6,7 @@ export default function Card({ image, caption, handleClick }) {
 		>
 			<img
 				src={image}
-				alt="image"
+				alt={caption}
 				className="rounded-pill p-1 border border-warning border-5 bg-white img-fluid"
 			></img>
 			<span className="text-center text-warning text-lg">{caption}</span>
