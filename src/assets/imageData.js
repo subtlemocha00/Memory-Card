@@ -1,7 +1,7 @@
 const imageData = [
 	{
 		alt: "Beaver",
-		src: { medium: "./src/assets/images/beaver.png" },
+		src: { medium: "../src/assets/images/beaver.png" },
 		id: "beaver",
 	},
 	{ alt: "Cat", src: { medium: "./src/assets/images/cat.png" }, id: "cat" },
