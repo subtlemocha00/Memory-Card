@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createClient } from "pexels";
-import Card from "./card";
+import Card from "./Card";
 
 const client = createClient(import.meta.env.VITE_API_KEY);
 
