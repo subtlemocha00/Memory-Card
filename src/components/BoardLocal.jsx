@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import imageData from "../assets/imageData";
+import imageData from "../imageData";
 
 export default function BoardLocal() {
 	const [data, setData] = useState(null);
