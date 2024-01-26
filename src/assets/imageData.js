@@ -1,13 +1,13 @@
 const imageData = [
 	{
 		alt: "Beaver",
-		src: { medium: "../assets/images/beaver.png" },
+		src: { medium: "src/assets/images/beaver.png" },
 		id: "beaver",
 	},
-	{ alt: "Cat", src: { medium: "../assets/images/cat.png" }, id: "cat" },
+	{ alt: "Cat", src: { medium: "src/assets/images/cat.png" }, id: "cat" },
 	{
 		alt: "Chicken",
-		src: { medium: "../assets/images/chicken.png" },
+		src: { medium: "src/assets/images/chicken.png" },
 		id: "chicken",
 	},
 	{ alt: "Cow", src: { medium: "src/assets/images/cow.png" }, id: "cow" },
