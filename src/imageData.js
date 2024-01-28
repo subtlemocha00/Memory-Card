@@ -1,5 +1,10 @@
 const imageData = [
 	{
+		alt: "Bear",
+		src: { medium: "/assets/bear.png" },
+		id: "bear",
+	},
+	{
 		alt: "Beaver",
 		src: { medium: "/assets/beaver.png" },
 		id: "beaver",
@@ -84,6 +89,11 @@ const imageData = [
 		id: "lion",
 	},
 	{
+		alt: "Llama",
+		src: { medium: "/assets/llama.png" },
+		id: "llama",
+	},
+	{
 		alt: "Monkey",
 		src: { medium: "/assets/lion.png" },
 		id: "monkey",
@@ -92,6 +102,11 @@ const imageData = [
 		alt: "Moose",
 		src: { medium: "/assets/moose.png" },
 		id: "moose",
+	},
+	{
+		alt: "Octopus",
+		src: { medium: "/assets/octopus.png" },
+		id: "octopus",
 	},
 	{
 		alt: "Penguin",
@@ -113,6 +128,11 @@ const imageData = [
 		alt: "Squirrel",
 		src: { medium: "/assets/squirrel.png" },
 		id: "squirrel",
+	},
+	{
+		alt: "Tiger",
+		src: { medium: "/assets/tiger.png" },
+		id: "tiger",
 	},
 	{
 		alt: "T-Rex",
