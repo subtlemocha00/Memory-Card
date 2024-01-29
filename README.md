@@ -7,4 +7,4 @@ This is a project from The Odin Project Javascript course.
 
 Built with React, Vite and Node.js.
 
-Pexels.com image API for card images.
+Dall-E generated children's illustrations for card images.
