@@ -1,6 +1,6 @@
 export default function Rules() {
 	return (
-		<div className="bg-danger d-flex justify-content-center">
+		<div className="bg-danger d-flex">
 			<button
 				className="btn btn-lg btn-warning m-3 col-6 fs-3 fw-bold text-primary"
 				type="button"
@@ -12,7 +12,7 @@ export default function Rules() {
 				Rules
 			</button>
 			<div className="collapse" id="rules">
-				<p className="p-2 m-0 text-white fs-4">
+				<p className="p-2 m-0 text-white text-center fs-4">
 					Click on each card only once! See if you can get to 25 points.
 				</p>
 			</div>

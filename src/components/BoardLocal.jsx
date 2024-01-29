@@ -1,20 +1,22 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import imageData from "../imageData";
+// import imageDataAnimals from "../imageDataAnimals";
+// import imageDataVehicles from "../imageDataVehicles";
 
-export default function BoardLocal() {
+export default function BoardLocal({ cardSelect, imageSet }) {
 	const [data, setData] = useState(null);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		setData(imageData);
+		setData(imageSet);
+		// setData(imageDataVehicles);
 		setLoading(false);
 	}, []);
 
-	const shuffle = () => {
+	const shuffle = (id) => {
+		cardSelect(id);
 		setLoading(true);
 		const shuffledArray = [...data];
-		console.log(shuffledArray);
 		for (let i = shuffledArray.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
 			[shuffledArray[i], shuffledArray[j]] = [
@@ -25,6 +27,7 @@ export default function BoardLocal() {
 		setData(shuffledArray);
 		setLoading(false);
 	};
+
 	return (
 		<div className="d-flex flex-wrap justify-content-evenly bg-primary">
 			{loading ? (
@@ -33,6 +36,7 @@ export default function BoardLocal() {
 				data.map((item) => (
 					<Card
 						key={item.id}
+						id={item.id}
 						image={item.src.medium}
 						caption={item.alt}
 						handleClick={shuffle}

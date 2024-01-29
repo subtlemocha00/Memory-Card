@@ -31,4 +31,5 @@ DONE 6 fetch data (useEffect)
 DONE 10 function that shuffles an array of objects (Fisher-Yates Sorting Algorithm)
 
 FRONTEND
-WIP 11 card component
+DONE 11 card component
+12 button to toggle name display
