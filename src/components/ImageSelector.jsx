@@ -21,7 +21,7 @@ export default function ImageSelector({ selectImageSet, activeImageSet }) {
 			<button
 				onClick={() => handleClick("cute")}
 				type="button"
-				className={`btn btn-primary select-b border-warning border-4 col-auto m-2 mb-0 fs-md-4 ${
+				className={`btn btn-primary select-c border-warning border-4 col-auto m-2 mb-0 fs-md-4 ${
 					activeImageSet === "vehicles" ? "active" : ""
 				}`}
 			></button>
