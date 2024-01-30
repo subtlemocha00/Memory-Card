@@ -42,7 +42,7 @@ function App() {
 		if (images === "vehicles") {
 			setImageSet(imageDataVehicles);
 		}
-		if (images != "animals" && images != "vehicles") {
+		if (images !== "animals" && images !== "vehicles") {
 			setImageSet(await fetchPhotos(images));
 		}
 	};
