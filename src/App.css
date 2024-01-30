@@ -14,3 +14,26 @@
 	width: 110px;
 	height: 110px;
 }
+
+.active {
+	border: 2px solid black;
+}
+
+div.card {
+	animation: cardAnimation 0.5s ease-in forwards;
+}
+
+@keyframes cardAnimation {
+	0% {
+		transform: translate(100%, 100%);
+		opacity: 0;
+	}
+	90% {
+		transform: translate(-7%, -7%);
+		opacity: 0.75;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}

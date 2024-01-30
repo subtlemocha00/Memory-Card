@@ -32,17 +32,13 @@ function App() {
 		}
 	};
 	const selectImageSet = (images) => {
-		console.log(images + " received!");
 		if (images === "animals") {
 			setImageSet(imageDataAnimals);
 		}
 		if (images === "vehicles") {
 			setImageSet(imageDataVehicles);
-			console.log(activeImageSet);
 		}
 	};
-	// useEffect(() => {
-	// }, [imageSet]);
 
 	return (
 		<div className="">

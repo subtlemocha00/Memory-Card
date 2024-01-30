@@ -6,10 +6,9 @@ export default function BoardLocal({ cardSelect, imageSet }) {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		console.log(imageSet);
 		setData(imageSet);
 		setLoading(false);
-	}, []);
+	}, [imageSet]);
 
 	const shuffle = (id) => {
 		cardSelect(id);
@@ -31,13 +30,14 @@ export default function BoardLocal({ cardSelect, imageSet }) {
 			{loading ? (
 				<div>Loading...</div>
 			) : data.length > 0 ? (
-				data.map((item) => (
+				data.map((item, index) => (
 					<Card
 						key={item.id}
 						id={item.id}
 						image={item.src.medium}
 						caption={item.alt}
 						handleClick={shuffle}
+						index={index}
 					/>
 				))
 			) : (
