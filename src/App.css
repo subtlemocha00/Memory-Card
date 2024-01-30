@@ -20,7 +20,7 @@
 }
 
 div.card {
-	animation: cardAnimation 0.5s ease-in forwards;
+	animation: cardAnimation 0.25s ease-in forwards;
 }
 
 @keyframes cardAnimation {

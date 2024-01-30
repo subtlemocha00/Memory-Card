@@ -29,7 +29,7 @@ export default function BoardLocal({ cardSelect, imageSet }) {
 		<div className="d-flex flex-wrap justify-content-evenly bg-primary">
 			{loading ? (
 				<div>Loading...</div>
-			) : data.length > 0 ? (
+			) : (
 				data.map((item, index) => (
 					<Card
 						key={item.id}
@@ -40,8 +40,6 @@ export default function BoardLocal({ cardSelect, imageSet }) {
 						index={index}
 					/>
 				))
-			) : (
-				<div>Error: {error}</div>
 			)}
 		</div>
 	);

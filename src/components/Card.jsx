@@ -10,9 +10,9 @@ export default function Card({ id, image, caption, handleClick, index }) {
 				alt={caption}
 				className="rounded-pill p-1 border border-warning border-5 bg-white img-fluid"
 			></img>
-			<span className="text-center text-warning fs-3 fs-md-3 text-wrap">
+			{/* <span className="text-center text-warning fs-3 fs-md-3 text-wrap">
 				{caption}
-			</span>
+			</span> */}
 		</div>
 	);
 }

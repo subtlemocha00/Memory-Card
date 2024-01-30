@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min";
 import "./App.css";
 import Rules from "./components/Rules";
-// import Board from "./components/Board";
+import { fetchPhotos } from "./fetchPhotos";
 import BoardLocal from "./components/BoardLocal";
 import Scoreboard from "./components/Scoreboard";
 import { useEffect, useState } from "react";
@@ -16,12 +16,14 @@ function App() {
 	const [guesses, setGuesses] = useState([]);
 	const [imageSet, setImageSet] = useState(imageDataAnimals);
 
+	const activeImageSet = imageSet === imageDataAnimals ? "animals" : "vehicles";
+
 	useEffect(() => {
 		if (currentScore > highScore) {
 			setHighScore(currentScore);
 		}
 	}, [currentScore]);
-	const activeImageSet = imageSet === imageDataAnimals ? "animals" : "vehicles";
+
 	const cardSelect = (id) => {
 		if (guesses.includes(id)) {
 			setGuesses([]);
@@ -31,12 +33,18 @@ function App() {
 			setCurrentScore(currentScore + 1);
 		}
 	};
-	const selectImageSet = (images) => {
+
+	const selectImageSet = async (images) => {
+		const apiQuery = fetchPhotos("dessert");
+		setCurrentScore(0);
 		if (images === "animals") {
 			setImageSet(imageDataAnimals);
 		}
 		if (images === "vehicles") {
 			setImageSet(imageDataVehicles);
+		}
+		if (images != "animals" && images != "vehicles") {
+			setImageSet(await fetchPhotos(images));
 		}
 	};
 
@@ -48,7 +56,6 @@ function App() {
 				activeImageSet={activeImageSet}
 			/>
 			<Scoreboard currentScore={currentScore} highScore={highScore} />
-			{/* <Board /> */}
 			<BoardLocal cardSelect={cardSelect} imageSet={imageSet} />
 		</div>
 	);
