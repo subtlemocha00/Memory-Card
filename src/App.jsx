@@ -35,7 +35,6 @@ function App() {
 	};
 
 	const selectImageSet = async (images) => {
-		const apiQuery = fetchPhotos("dessert");
 		setCurrentScore(0);
 		if (images === "animals") {
 			setImageSet(imageDataAnimals);
