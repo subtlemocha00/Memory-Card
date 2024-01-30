@@ -21,7 +21,7 @@ function App() {
 			setHighScore(currentScore);
 		}
 	}, [currentScore]);
-
+	const activeImageSet = imageSet === imageDataAnimals ? "animals" : "vehicles";
 	const cardSelect = (id) => {
 		if (guesses.includes(id)) {
 			setGuesses([]);
@@ -31,15 +31,26 @@ function App() {
 			setCurrentScore(currentScore + 1);
 		}
 	};
-
-	const selectImageSet = ({ target }) => {
-		console.log(target);
+	const selectImageSet = (images) => {
+		console.log(images + " received!");
+		if (images === "animals") {
+			setImageSet(imageDataAnimals);
+		}
+		if (images === "vehicles") {
+			setImageSet(imageDataVehicles);
+			console.log(activeImageSet);
+		}
 	};
+	// useEffect(() => {
+	// }, [imageSet]);
 
 	return (
 		<div className="">
 			<Rules />
-			<ImageSelector />
+			<ImageSelector
+				selectImageSet={selectImageSet}
+				activeImageSet={activeImageSet}
+			/>
 			<Scoreboard currentScore={currentScore} highScore={highScore} />
 			{/* <Board /> */}
 			<BoardLocal cardSelect={cardSelect} imageSet={imageSet} />

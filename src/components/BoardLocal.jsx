@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-// import imageDataAnimals from "../imageDataAnimals";
-// import imageDataVehicles from "../imageDataVehicles";
 
 export default function BoardLocal({ cardSelect, imageSet }) {
 	const [data, setData] = useState(null);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		console.log(imageSet);
 		setData(imageSet);
-		// setData(imageDataVehicles);
 		setLoading(false);
 	}, []);
 
