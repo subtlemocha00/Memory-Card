@@ -1,7 +1,6 @@
 export default function ImageSelector({ selectImageSet, activeImageSet }) {
 	const handleClick = (imageSet) => {
 		selectImageSet(imageSet);
-		console.log("images sent");
 	};
 	return (
 		<div className="d-flex justify-content-center pt-1 bg-primary">
