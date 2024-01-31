@@ -3,19 +3,19 @@
 }
 
 .select-a {
-	background-image: url("/assets/animals.png");
+	background-image: url("/assets/buttons/animals.png");
 	background-size: cover;
 	width: 110px;
 	height: 110px;
 }
 .select-b {
-	background-image: url("/assets/vehicles.png");
+	background-image: url("/assets/buttons/vehicles.png");
 	background-size: cover;
 	width: 110px;
 	height: 110px;
 }
 .select-c {
-	background-image: url("/assets/qblock.png");
+	background-image: url("/assets/buttons/qblock.png");
 	background-size: cover;
 	width: 110px;
 	height: 110px;
