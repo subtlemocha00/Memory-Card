@@ -38,11 +38,9 @@ function App() {
 		setCurrentScore(0);
 		if (images === "animals") {
 			setImageSet(imageDataAnimals);
-		}
-		if (images === "vehicles") {
+		} else if (images === "vehicles") {
 			setImageSet(imageDataVehicles);
-		}
-		if (images !== "animals" && images !== "vehicles") {
+		} else if (images !== "animals" && images !== "vehicles") {
 			setImageSet(await fetchPhotos(images));
 		}
 	};
