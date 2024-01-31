@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min";
 import "./App.css";
 import Rules from "./components/Rules";
-import { fetchPhotos } from "./fetchPhotos";
+import fetchPhotos from "./fetchPhotos";
 import BoardLocal from "./components/BoardLocal";
 import Scoreboard from "./components/Scoreboard";
 import { useEffect, useState } from "react";
