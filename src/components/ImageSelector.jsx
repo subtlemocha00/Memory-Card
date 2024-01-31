@@ -18,13 +18,13 @@ export default function ImageSelector({ selectImageSet, activeImageSet }) {
 					activeImageSet === "vehicles" ? "active" : ""
 				}`}
 			></button>
-			<button
+			{/* <button
 				onClick={() => handleClick("cute")}
 				type="button"
 				className={`btn btn-primary select-c border-warning border-4 col-auto m-2 mb-0 fs-md-4 ${
 					activeImageSet === "cute" ? "active" : ""
 				}`}
-			></button>
+			></button> */}
 		</div>
 	);
 }
